@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IMSI-catcher — Interfaces</title>
+<style>
+  :root{
+    --bg:#0f1115; --card:#181b22; --fg:#e8eaed; --muted:#9aa0ac;
+    --accent:#2ee86a; --border:#262a33; --warn:#ffcf4a;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);
+    font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55}
+  header{padding:40px 20px 24px;text-align:center;border-bottom:1px solid var(--border)}
+  h1{margin:0 0 6px;font-size:28px}
+  header p{margin:4px auto;max-width:720px;color:var(--muted)}
+  .warn{max-width:860px;margin:20px auto 0;padding:14px 18px;border:1px solid var(--warn);
+    border-radius:10px;background:rgba(255,207,74,.08);color:#ffe49a;font-size:14px}
+  main{max-width:1040px;margin:0 auto;padding:28px 16px 60px;display:grid;gap:28px}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:14px;overflow:hidden}
+  .card figure{margin:0}
+  .card img{display:block;width:100%;height:auto;background:#0a0a0a}
+  .card .body{padding:16px 20px}
+  .card h2{margin:0 0 6px;font-size:18px}
+  .card h2 code{color:var(--accent);font-size:15px}
+  .card p{margin:6px 0 0;color:var(--muted);font-size:14px}
+  .tag{display:inline-block;font-size:11px;color:#0f1115;background:var(--accent);
+    padding:2px 8px;border-radius:20px;font-weight:600;margin-bottom:8px}
+  footer{text-align:center;color:var(--muted);font-size:13px;padding:30px 16px 50px;border-top:1px solid var(--border)}
+  a{color:var(--accent)}
+</style>
+</head>
+<body>
+<header>
+  <h1>IMSI-catcher — Interfaces graphiques</h1>
+  <p>Aperçu des différentes interfaces de l'outil pédagogique et passif d'analyse GSM (2G).</p>
+  <div class="warn">⚠️ Outil fourni à des fins <strong>éducatives et de recherche</strong> uniquement.
+  L'interception de communications sans autorisation est illégale. N'utilisez cet outil que sur
+  vos propres appareils ou avec une autorisation écrite explicite.</div>
+</header>
+<main>
+
+  <article class="card">
+    <figure><img src="00-real-capture.png" alt="Capture d'écran réelle : terminaux + grgsm_livemon"></figure>
+    <div class="body">
+      <span class="tag">Capture réelle</span>
+      <h2>Vue d'ensemble</h2>
+      <p>Capture d'écran authentique fournie avec le projet : à gauche la sortie de
+      <code>simple_IMSI-catcher.py</code> et les trames GSM décodées, à droite l'interface
+      <code>grgsm_livemon</code> avec son spectre de puissance.</p>
+    </div>
+  </article>
+
+  <article class="card">
+    <figure><img src="01-simple-imsi-catcher.svg" alt="Sortie terminal de simple_IMSI-catcher.py"></figure>
+    <div class="body">
+      <span class="tag">Reconstitution</span>
+      <h2><code>simple_IMSI-catcher.py</code> — tableau terminal</h2>
+      <p>Chaque ligne correspond à un IMSI observé : numéro, TMSI, IMSI (pays + opérateur
+      déduits du MCC/MNC), LAC, CellId et horodatage. Les chiffres de fin d'IMSI sont masqués ici
+      par respect de la vie privée.</p>
+    </div>
+  </article>
+
+  <article class="card">
+    <figure><img src="02-grgsm-livemon.svg" alt="Interface graphique grgsm_livemon (GNU Radio)"></figure>
+    <div class="body">
+      <span class="tag">Reconstitution</span>
+      <h2><code>grgsm_livemon</code> — interface GNU Radio</h2>
+      <p>Décodeur GSM en temps réel : spectre de puissance (dB vs MHz) avec le lobe d'une porteuse
+      GSM au centre, et contrôles de fréquence, de gain et d'offset PPM. Les trames décodées sont
+      envoyées en GSMTAP/UDP vers le port 4729.</p>
+    </div>
+  </article>
+
+  <article class="card">
+    <figure><img src="03-grgsm-scanner.svg" alt="Sortie terminal de grgsm_scanner"></figure>
+    <div class="body">
+      <span class="tag">Reconstitution</span>
+      <h2><code>grgsm_scanner</code> — détection des cellules</h2>
+      <p>Balayage des stations de base GSM à portée : ARFCN, fréquence, CID, LAC, MCC/MNC et
+      puissance reçue. Sert à choisir la fréquence à passer à <code>grgsm_livemon -f</code>.</p>
+    </div>
+  </article>
+
+  <article class="card">
+    <figure><img src="04-wireshark.svg" alt="Analyse des trames GSMTAP dans Wireshark"></figure>
+    <div class="body">
+      <span class="tag">Reconstitution</span>
+      <h2>Wireshark — trames GSMTAP</h2>
+      <p>Analyse détaillée des trames décodées (filtre <code>!icmp &amp;&amp; gsmtap</code>) :
+      requêtes de paging, System Information et l'identité mobile (IMSI / MCC / MNC) visible
+      en clair sur les canaux de signalisation 2G.</p>
+    </div>
+  </article>
+
+</main>
+<footer>
+  Projet original : <a href="https://github.com/Oros42/IMSI-catcher">Oros42/IMSI-catcher</a> ·
+  Licence CC0 1.0 Universal.<br>
+  Les reconstitutions sont des illustrations fidèles du format de sortie des outils
+  (aucune donnée personnelle réelle).
+</footer>
+</body>
+</html>

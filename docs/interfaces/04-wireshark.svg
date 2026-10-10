@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="620" viewBox="0 0 960 620" font-family="'DejaVu Sans','Segoe UI',sans-serif">
+  <rect width="960" height="620" fill="#f0f0f0"/>
+  <!-- title bar -->
+  <rect x="0" y="0" width="960" height="28" fill="#2b2b2b"/>
+  <text x="14" y="19" fill="#eaeaea" font-size="13">Wireshark · Capturing from lo  —  Filter: !icmp &amp;&amp; gsmtap</text>
+  <!-- menu bar -->
+  <rect x="0" y="28" width="960" height="24" fill="#e4e4e4"/>
+  <g font-size="12" fill="#333"><text x="12" y="44">File  Edit  View  Go  Capture  Analyze  Statistics  Telephony  Wireless  Tools  Help</text></g>
+  <!-- filter bar -->
+  <rect x="0" y="52" width="960" height="26" fill="#d7ede0"/>
+  <rect x="8" y="55" width="944" height="20" rx="3" fill="#ffffff" stroke="#9ec6ad"/>
+  <text x="16" y="69" font-size="12" fill="#2a7a45" font-family="monospace">!icmp &amp;&amp; gsmtap</text>
+
+  <!-- packet list header -->
+  <rect x="0" y="80" width="960" height="22" fill="#dfe6ee"/>
+  <g font-size="11.5" fill="#222" font-weight="bold">
+    <text x="10" y="95">No.</text><text x="60" y="95">Time</text>
+    <text x="150" y="95">Source</text><text x="260" y="95">Destination</text>
+    <text x="380" y="95">Protocol</text><text x="450" y="95">Length</text>
+    <text x="520" y="95">Info</text>
+  </g>
+  <!-- packet rows -->
+  <g font-size="11.5" font-family="monospace">
+    <rect x="0" y="102" width="960" height="18" fill="#eef3f8"/>
+    <rect x="0" y="120" width="960" height="18" fill="#ffffff"/>
+    <rect x="0" y="138" width="960" height="18" fill="#eef3f8"/>
+    <rect x="0" y="156" width="960" height="18" fill="#c8e6c9"/> <!-- selected -->
+    <rect x="0" y="174" width="960" height="18" fill="#ffffff"/>
+    <rect x="0" y="192" width="960" height="18" fill="#eef3f8"/>
+    <rect x="0" y="210" width="960" height="18" fill="#ffffff"/>
+    <rect x="0" y="228" width="960" height="18" fill="#eef3f8"/>
+    <g fill="#1a1a1a">
+      <text x="10" y="115">141</text><text x="60" y="115">7.182</text><text x="150" y="115">127.0.0.1</text><text x="260" y="115">127.0.0.1</text><text x="380" y="115" fill="#0a5">GSMTAP</text><text x="450" y="115">69</text><text x="520" y="115">(CCCH) (RR) System Information Type 3</text>
+      <text x="10" y="133">142</text><text x="60" y="133">7.205</text><text x="150" y="133">127.0.0.1</text><text x="260" y="133">127.0.0.1</text><text x="380" y="133" fill="#0a5">GSMTAP</text><text x="450" y="133">69</text><text x="520" y="133">(CCCH) (RR) Paging Request Type 1</text>
+      <text x="10" y="151">143</text><text x="60" y="151">7.241</text><text x="150" y="151">127.0.0.1</text><text x="260" y="151">127.0.0.1</text><text x="380" y="151" fill="#0a5">GSMTAP</text><text x="450" y="151">69</text><text x="520" y="151">(CCCH) (RR) Immediate Assignment</text>
+    </g>
+    <g fill="#0b3d16" font-weight="bold">
+      <text x="10" y="169">144</text><text x="60" y="169">7.268</text><text x="150" y="169">127.0.0.1</text><text x="260" y="169">127.0.0.1</text><text x="380" y="169">GSMTAP</text><text x="450" y="169">69</text><text x="520" y="169">(CCCH) (RR) Paging Request Type 1 — Mobile Identity: IMSI</text>
+    </g>
+    <g fill="#1a1a1a">
+      <text x="10" y="187">145</text><text x="60" y="187">7.290</text><text x="150" y="187">127.0.0.1</text><text x="260" y="187">127.0.0.1</text><text x="380" y="187" fill="#0a5">GSMTAP</text><text x="450" y="187">69</text><text x="520" y="187">(CCCH) (RR) Paging Request Type 2</text>
+      <text x="10" y="205">146</text><text x="60" y="205">7.318</text><text x="150" y="205">127.0.0.1</text><text x="260" y="205">127.0.0.1</text><text x="380" y="205" fill="#0a5">GSMTAP</text><text x="450" y="205">69</text><text x="520" y="205">(BCCH) (RR) System Information Type 2</text>
+      <text x="10" y="223">147</text><text x="60" y="223">7.351</text><text x="150" y="223">127.0.0.1</text><text x="260" y="223">127.0.0.1</text><text x="380" y="223" fill="#0a5">GSMTAP</text><text x="450" y="223">69</text><text x="520" y="223">(CCCH) (RR) Paging Request Type 1</text>
+      <text x="10" y="241">148</text><text x="60" y="241">7.377</text><text x="150" y="241">127.0.0.1</text><text x="260" y="241">127.0.0.1</text><text x="380" y="241" fill="#0a5">GSMTAP</text><text x="450" y="241">69</text><text x="520" y="241">(CCCH) (RR) System Information Type 4</text>
+    </g>
+  </g>
+
+  <!-- packet detail pane -->
+  <rect x="0" y="252" width="960" height="238" fill="#ffffff" stroke="#cccccc"/>
+  <g font-size="11.5" font-family="monospace" fill="#222">
+    <text x="10" y="270">▸ Frame 144: 69 bytes on wire (552 bits)</text>
+    <text x="10" y="288">▸ Linux cooked capture v1</text>
+    <text x="10" y="306">▾ GSM TAP Header, ARFCN: 981 (Downlink), TS: 0, Channel: CCCH (0)</text>
+    <text x="34" y="324">Version: 2 · Header length: 4 · Payload Type: GSM Um (1)</text>
+    <text x="34" y="342">ARFCN: 981 · Signal/Noise: -47 dBm · Frame Nr: 1270451</text>
+    <text x="10" y="360">▾ GSM CCCH - Paging Request Type 1</text>
+    <text x="34" y="378">L2 Pseudo Length: 0x31 (24)</text>
+    <text x="34" y="396">Protocol discriminator: Radio Resources Management (0x06)</text>
+    <text x="34" y="414">Message Type: Paging Request Type 1 (0x21)</text>
+    <text x="34" y="432" fill="#b00040" font-weight="bold">▾ Mobile Identity 1 - IMSI (208 20 171286XXX)</text>
+    <text x="58" y="450" fill="#b00040">Mobile Country Code (MCC): France (208)</text>
+    <text x="58" y="468" fill="#b00040">Mobile Network Code (MNC): Bouygues Telecom (20)</text>
+  </g>
+  <!-- hex pane -->
+  <rect x="0" y="490" width="960" height="100" fill="#fbfbf5" stroke="#cccccc"/>
+  <g font-size="11" font-family="monospace" fill="#444">
+    <text x="10" y="508">0000  00 04 00 01 00 06 00 00 00 00 00 00 08 00 45 00   ..............E.</text>
+    <text x="10" y="524">0010  00 43 9a 6b 40 00 40 11 a2 3c 7f 00 00 01 7f 00   .C.k@.@..&lt;......</text>
+    <text x="10" y="540">0020  00 01 ed d1 12 79 00 2f fe 42 02 04 03 d5 00 00   .....y./.B......</text>
+    <text x="10" y="556">0030  00 c9 00 00 16 21 26 02 00 07 00 31 06 21 00 08   .....!&amp;....1.!..</text>
+    <text x="10" y="572">0040  <tspan fill="#b00040" font-weight="bold">f8 02 01 71 82 86 XX XX</tspan> 2b 2b 2b 2b 2b 2b 2b       ...q............</text>
+  </g>
+  <!-- status bar -->
+  <rect x="0" y="590" width="960" height="30" fill="#e4e4e4"/>
+  <text x="12" y="609" font-size="12" fill="#333">● lo   Packets: 148 · Displayed: 148 (100.0%)   Profile: Default</text>
+</svg>

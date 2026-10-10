@@ -1,0 +1,13 @@
+# Core Python dependencies for simple_IMSI-catcher.py
+# System packages (gr-gsm, grgsm_livemon, grgsm_scanner) must be installed
+# separately via apt — see README.md.
+scapy>=2.5.0
+numpy>=1.21
+scipy>=1.7
+
+# Optional: MySQL logging (-z / --mysql)
+python-decouple>=3.6
+mysqlclient>=2.1
+
+# Optional: refreshing mcc-mnc/mcc_codes.json (mcc-mnc/update_codes.py)
+beautifulsoup4>=4.10

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="560" viewBox="0 0 960 560" font-family="'DejaVu Sans Mono','Courier New',monospace">
+  <rect width="960" height="560" fill="#1b1b1b"/>
+  <!-- window chrome -->
+  <rect x="0" y="0" width="960" height="30" fill="#2d2d2d"/>
+  <circle cx="20" cy="15" r="6" fill="#ff5f56"/>
+  <circle cx="40" cy="15" r="6" fill="#ffbd2e"/>
+  <circle cx="60" cy="15" r="6" fill="#27c93f"/>
+  <text x="480" y="20" fill="#cfcfcf" font-size="13" text-anchor="middle">Terminal — simple_IMSI-catcher.py</text>
+  <!-- terminal body -->
+  <rect x="0" y="30" width="960" height="530" fill="#0a0a0a"/>
+  <g font-size="13" fill="#2ee86a">
+    <text x="12" y="54"><tspan fill="#8ae234">$</tspan> <tspan fill="#d0d0d0">sudo python3 simple_IMSI-catcher.py -s</tspan></text>
+    <text x="12" y="74" fill="#d7a">WARNING: No route found for IPv6 destination :: (no default route?)</text>
+    <!-- header -->
+    <text x="12" y="98" fill="#9bd">Nb IMSI ; TMSI-1     ; TMSI-2     ; IMSI              ; country          ; brand          ; operator              ; MCC  ; MNC   ; LAC    ; CellId ; Timestamp</text>
+    <line x1="12" y1="104" x2="948" y2="104" stroke="#204020" stroke-width="1"/>
+  </g>
+  <g font-size="12.5" fill="#2ee86a">
+    <text x="12" y="124">1       ; 0xd9605460 ; 0xf8680326 ; 234 20 730143XXX  ; Guernsey         ; Hutchison 3G   ; Hutchison 3G UK Ltd   ; 234  ; 20    ; 1007   ; 4242   ; 2026-10-10T18:42:03</text>
+    <text x="12" y="142">2       ; 0x4e171a8f ;            ; 208 20 154308XXX  ; France           ; Bouygues       ; Bouygues Telecom      ; 208  ; 20    ; 412    ; 24989  ; 2026-10-10T18:42:05</text>
+    <text x="12" y="160">3       ; 0x2b3a9c01 ; 0x51348044 ; 208 20 029666XXX  ; France           ; Bouygues       ; Bouygues Telecom      ; 208  ; 20    ; 412    ; 24989  ; 2026-10-10T18:42:06</text>
+    <text x="12" y="178">4       ; 0x80022069 ;            ; 208 20 085162XXX  ; France           ; Bouygues       ; Bouygues Telecom      ; 208  ; 20    ; 412    ; 24989  ; 2026-10-10T18:42:08</text>
+    <text x="12" y="196">5       ; 0x19cc8031 ; 0xe57a5017 ; 208 20 031381XXX  ; France           ; Bouygues       ; Bouygues Telecom      ; 208  ; 20    ; 412    ; 24989  ; 2026-10-10T18:42:09</text>
+    <text x="12" y="214">6       ; 0x3f104203 ;            ; 208 20 031233XXX  ; France           ; Bouygues       ; Bouygues Telecom      ; 208  ; 20    ; 412    ; 24989  ; 2026-10-10T18:42:11</text>
+    <text x="12" y="232">7       ; 0x0e031df7 ; 0xba371034 ; 208 20 031343XXX  ; France           ; Bouygues       ; Bouygues Telecom      ; 208  ; 20    ; 412    ; 24989  ; 2026-10-10T18:42:12</text>
+    <text x="12" y="250">8       ; 0xc8031e57 ;            ; 208 20 171286XXX  ; France           ; Bouygues       ; Bouygues Telecom      ; 208  ; 20    ; 412    ; 24989  ; 2026-10-10T18:42:14</text>
+    <text x="12" y="268">9       ; 0xa5017900 ; 0x001c132b ; 208 20 090096XXX  ; France           ; Bouygues       ; Bouygues Telecom      ; 208  ; 20    ; 412    ; 24989  ; 2026-10-10T18:42:15</text>
+    <text x="12" y="286">10      ; 0x58680326 ;            ; 208 20 100817XXX  ; France           ; Bouygues       ; Bouygues Telecom      ; 208  ; 20    ; 412    ; 24989  ; 2026-10-10T18:42:17</text>
+    <text x="12" y="304">11      ; 0x23f80201 ; 0x9cc8031e ; 208 20 144546XXX  ; France           ; Bouygues       ; Bouygues Telecom      ; 208  ; 20    ; 412    ; 24989  ; 2026-10-10T18:42:18</text>
+    <text x="12" y="322">12      ; 0x57a50179 ;            ; 208 20 220088XXX  ; France           ; Bouygues       ; Bouygues Telecom      ; 208  ; 20    ; 412    ; 24989  ; 2026-10-10T18:42:20</text>
+    <text x="12" y="340">13      ; 0x001c1300 ; 0x2b2b2b2b ; 208 20 171268XXX  ; France           ; Bouygues       ; Bouygues Telecom      ; 208  ; 20    ; 412    ; 24989  ; 2026-10-10T18:42:21</text>
+    <text x="12" y="358">14      ; 0x8f02f802 ;            ; 208 20 154457XXX  ; France           ; Bouygues       ; Bouygues Telecom      ; 208  ; 20    ; 412    ; 24989  ; 2026-10-10T18:42:23</text>
+    <text x="12" y="376">15      ; 0x019cc803 ; 0x1e57a501 ; 208 20 144758XXX  ; France           ; Bouygues       ; Bouygues Telecom      ; 208  ; 20    ; 412    ; 24989  ; 2026-10-10T18:42:24</text>
+    <text x="12" y="394">16      ; 0x79000016 ;            ; 208 20 031231XXX  ; France           ; Bouygues       ; Bouygues Telecom      ; 208  ; 20    ; 412    ; 24989  ; 2026-10-10T18:42:26</text>
+    <text x="12" y="412" fill="#ffd24a">17      ; 0x210005f4 ; 0xf8680326 ; 208 25 001134XXX  ; France           ; LycaMobile     ; LycaMobile            ; 208  ; 25    ; 1337   ; 2      ; 2026-10-10T18:42:27</text>
+    <text x="12" y="430">18      ; 0x2606211a ;            ; 208 20 171275XXX  ; France           ; Bouygues       ; Bouygues Telecom      ; 208  ; 20    ; 412    ; 24989  ; 2026-10-10T18:42:29</text>
+    <text x="12" y="448">19      ; 0x8fe79080 ; 0xad1c6049 ; 208 20 031317XXX  ; France           ; Bouygues       ; Bouygues Telecom      ; 208  ; 20    ; 412    ; 24989  ; 2026-10-10T18:42:30</text>
+    <text x="12" y="466">20      ; 0x00000000 ;            ; 208 20 154456XXX  ; France           ; Bouygues       ; Bouygues Telecom      ; 208  ; 20    ; 412    ; 24989  ; 2026-10-10T18:42:32</text>
+    <text x="12" y="484">21      ; 0xff7900ff ; 0x2b2b2b2b ; 208 20 144857XXX  ; France           ; Bouygues       ; Bouygues Telecom      ; 208  ; 20    ; 412    ; 24989  ; 2026-10-10T18:42:33</text>
+    <text x="12" y="502">22      ; 0x1a8fe790 ;            ; 208 20 031261XXX  ; France           ; Bouygues       ; Bouygues Telecom      ; 208  ; 20    ; 412    ; 24989  ; 2026-10-10T18:42:35</text>
+    <text x="12" y="520">23      ; 0x80ad1c60 ; 0x49000000 ; 208 20 144819XXX  ; France           ; Bouygues       ; Bouygues Telecom      ; 208  ; 20    ; 412    ; 24989  ; 2026-10-10T18:42:36</text>
+    <text x="12" y="538">24      ; 0x0e42facf ;            ; 208 20 100230XXX  ; France           ; Bouygues       ; Bouygues Telecom      ; 208  ; 20    ; 412    ; 24989  ; 2026-10-10T18:42:38<tspan fill="#8ae234"> █</tspan></text>
+  </g>
+</svg>

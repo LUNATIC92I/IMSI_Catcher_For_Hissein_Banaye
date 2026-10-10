@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+venv/
+.venv/
+env/
+
+# Editor
+.vscode/
+.idea/
+
+# Secrets / local config
+.env
+
+# Runtime output / captures
+test*
+*.sqlite
+*.sqlite3
+observations.txt
+imsi_*.txt

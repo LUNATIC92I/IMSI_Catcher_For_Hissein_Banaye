@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="380" viewBox="0 0 960 380" font-family="'DejaVu Sans Mono','Courier New',monospace">
+  <rect width="960" height="380" fill="#1b1b1b"/>
+  <rect x="0" y="0" width="960" height="30" fill="#2d2d2d"/>
+  <circle cx="20" cy="15" r="6" fill="#ff5f56"/>
+  <circle cx="40" cy="15" r="6" fill="#ffbd2e"/>
+  <circle cx="60" cy="15" r="6" fill="#27c93f"/>
+  <text x="480" y="20" fill="#cfcfcf" font-size="13" text-anchor="middle">Terminal — grgsm_scanner</text>
+  <rect x="0" y="30" width="960" height="350" fill="#0a0a0a"/>
+  <g font-size="13">
+    <text x="12" y="56"><tspan fill="#8ae234">$</tspan> <tspan fill="#d0d0d0">grgsm_scanner</tspan></text>
+    <text x="12" y="78" fill="#888">Using device #0 Realtek RTL2838UHIDIR SN: 00000001</text>
+    <text x="12" y="96" fill="#888">Found Rafael Micro R820T tuner</text>
+    <g fill="#2ee86a">
+      <text x="12" y="124">ARFCN:  974, Freq:  925.0M, CID:     2, LAC:   1337, MCC: 208, MNC:  25, Pwr: -41</text>
+      <text x="12" y="144">ARFCN:  976, Freq:  925.4M, CID:  4242, LAC:   1007, MCC: 234, MNC:  20, Pwr: -45</text>
+      <text x="12" y="164">ARFCN:  981, Freq:  926.4M, CID: 24989, LAC:    412, MCC: 208, MNC:  20, Pwr: -47</text>
+      <text x="12" y="184">ARFCN:  987, Freq:  927.6M, CID:  5123, LAC:    412, MCC: 208, MNC:  20, Pwr: -52</text>
+      <text x="12" y="204">ARFCN: 1002, Freq:  930.6M, CID:  1877, LAC:    515, MCC: 208, MNC:  10, Pwr: -55</text>
+      <text x="12" y="224">ARFCN: 1008, Freq:  931.8M, CID:  9021, LAC:    515, MCC: 208, MNC:  10, Pwr: -58</text>
+      <text x="12" y="244">ARFCN:   12, Freq:  937.4M, CID:  3344, LAC:    617, MCC: 208, MNC:  15, Pwr: -61</text>
+      <text x="12" y="264">ARFCN:   27, Freq:  940.4M, CID:  7788, LAC:    617, MCC: 208, MNC:  15, Pwr: -66</text>
+    </g>
+    <text x="12" y="292" fill="#888">8 cells found.</text>
+    <text x="12" y="314"><tspan fill="#8ae234">$</tspan> <tspan fill="#d0d0d0">grgsm_livemon -f 926.4M</tspan><tspan fill="#8ae234"> █</tspan></text>
+  </g>
+</svg>
