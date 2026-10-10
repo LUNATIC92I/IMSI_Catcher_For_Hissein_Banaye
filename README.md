@@ -222,6 +222,26 @@ sudo apt install python3-decouple python3-mysqldb
 sudo python3 simple_IMSI-catcher.py -s --mysql
 ```
 
+### 🇹🇩 Opérateurs du Tchad / Chad operators
+
+Le pays et l'opérateur sont déduits automatiquement du **MCC/MNC** de l'IMSI grâce à
+`mcc-mnc/mcc_codes.json`. Aucune adaptation du code n'est nécessaire : le **Tchad (MCC 622)**
+est déjà pris en charge. Toute IMSI commençant par `622` affiche `Chad` et l'opérateur
+correspondant :
+
+| MCC | MNC | Marque | Opérateur |
+|-----|-----|--------|-----------|
+| 622 | 01  | Airtel | Bharti Airtel Tchad S.A. |
+| 622 | 02  | Tawali | Sotel Tchad |
+| 622 | 03  | Moov Africa | Moov Africa Tchad (ex-Tigo / Millicom) |
+| 622 | 07  | Salam  | Sotel Tchad |
+
+> Pour corriger ou compléter ces informations, éditez directement `mcc-mnc/mcc_codes.json`
+> (clé `"622"`), ou régénérez tout le fichier depuis Wikipédia avec
+> `python3 mcc-mnc/update_codes.py`. En pratique, pour capter des téléphones tchadiens il faut
+> surtout régler `grgsm_livemon` sur les **fréquences GSM 900/1800 utilisées localement**
+> (voir `grgsm_scanner`) — les codes opérateurs, eux, sont déjà en place.
+
 ### scan-and-livemon (obsolète / no longer used)
 
 ```bash
